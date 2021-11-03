@@ -289,7 +289,7 @@ void normal_calcultion()
     printf("                                    |                                                                                              |\n");   
     printf("                                    |      1- Addition (+)           2- Subtraction (-)       3- Multiplication (X)                |\n");
     printf("                                    |                                                                                              |\n");
-    printf("                                    |      4- Division (÷)           5- Remainder             6- n-th Root of a number (?)         |\n");
+    printf("                                    |      4- Division (Ã·)           5- Remainder             6- n-th Root of a number (?)         |\n");
     printf("                                    |                                                                                              |\n");
     printf("                                    |      7- power and exponential (x^)                                                           |\n");
     printf("                                    |                                                                                              |\n");
@@ -2760,7 +2760,7 @@ void cmplx(){
     printf("                                    |                                                                                              |\n");   
     printf("                                    |      1- Addition (+)           2- Subtraction (-)       3- Multiplication (X)                |\n");
     printf("                                    |                                                                                              |\n");
-    printf("                                    |      4- Division (÷)           5- conjunction           6- Absolute value                    |\n");
+    printf("                                    |      4- Division (Ã·)           5- conjunction           6- Absolute value                    |\n");
     printf("                                    |                                                                                              |\n");
     printf("                                    |      7- Phase Angle            8- Powers                9- Square root                       |\n");
     printf("                                    |                                                                                              |\n");
@@ -2942,7 +2942,7 @@ void cmplx(){
          scanf("%lf",&imag1);
          c1=real1+imag1*I;     //declaration of a complex number 
          c2=csqrt(c1);
-         printf(" square root of x = ±( %.1f + (%.1f)i ) \n",creal(c2), cimag(c2));  
+         printf(" square root of x = Â±( %.1f + (%.1f)i ) \n",creal(c2), cimag(c2));  
              
         break;
         
@@ -3103,7 +3103,26 @@ void date_diff(){
   system("cls");
   printf("\n With this type of running (.exe), it is ignoring to find the system informations data\n");
   printf(" Use NetBeans compiler to able it \n\n");
-    
+  
+####################################################################
+       
+struct utsname uname_pointer;
+
+ uname(&uname_pointer);
+ 
+ printf("\n - System name - %s \n", uname_pointer.sysname);
+ printf(" - Nodename    - %s \n", uname_pointer.nodename);
+ printf(" - Release     - %s \n", uname_pointer.release);
+ printf(" - Version     - %s \n", uname_pointer.version);
+ printf(" - Machine     - %s \n", uname_pointer.machine);
+ 
+    printf("\n\n # Press Enter to continue ... \n ");
+    while(getchar()!='\n');
+    getchar();
+    system("clear");
+
+####################################################################
+
 }
 */
 void user_manual()
