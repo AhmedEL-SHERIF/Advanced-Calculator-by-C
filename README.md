@@ -1,1 +1,1 @@
-# Advanced-Calculator-by-C
+# Advanced-Calculator-in-C
